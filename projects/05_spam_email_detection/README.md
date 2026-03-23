@@ -13,13 +13,10 @@ Detect whether an email is spam or ham using TF-IDF features and a Multinomial N
 ```bash
 pip install -r requirements.txt
 python src/train.py
+python src/predict.py --text "Congratulations, you won a free prize. Click now."
 ```
 
-To predict a custom message:
+## Outputs
 
-```bash
-python src/train.py --text "Congratulations, you won a free prize. Click now."
-```
-
-The trained pipeline is saved to `artifacts/spam_classifier.joblib`.
-
+- `artifacts/spam_bundle.joblib`
+- `artifacts/spam_report.json`

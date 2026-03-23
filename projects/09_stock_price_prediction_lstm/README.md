@@ -1,18 +1,20 @@
 # Stock Price Prediction with LSTM
 
-Forecast stock closing prices with a simple LSTM model using either a custom CSV or a generated demo time series.
+This project now includes a real time-series forecasting workflow with training, validation, bundle saving, and multi-step forecasting. The current local backend uses sequence-based regression so the project runs on this machine today, while keeping the door open for a future LSTM-specific backend.
 
 ## What is included
 
-- A TensorFlow LSTM training script
-- Synthetic demo data generation when no CSV is supplied
-- Model saving to `artifacts/stock_lstm.keras`
+- Deterministic demo stock-price generation
+- A training script with model selection over time-window features
+- A separate forecasting script for future dates
+- Saved reports and forecast CSV outputs
 
 ## Quick start
 
 ```bash
 pip install -r requirements.txt
-python src/train.py --epochs 5
+python src/train.py
+python src/forecast.py
 ```
 
 To use your own stock data:
@@ -20,11 +22,3 @@ To use your own stock data:
 ```bash
 python src/train.py --data-path path/to/stock_prices.csv
 ```
-
-Expected CSV columns:
-
-- `Date`
-- `Close`
-
-If no CSV is provided, the script trains on a deterministic synthetic price series for demonstration purposes.
-

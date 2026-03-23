@@ -13,7 +13,10 @@ Classify tumors as benign or malignant using the Wisconsin breast cancer dataset
 ```bash
 pip install -r requirements.txt
 python src/train.py
+python src/predict.py --sample-index 0
 ```
 
-The script saves the trained pipeline to `artifacts/breast_cancer_model.joblib`.
+## Outputs
 
+- `artifacts/breast_cancer_bundle.joblib`
+- `artifacts/breast_cancer_report.json`

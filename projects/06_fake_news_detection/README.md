@@ -13,13 +13,10 @@ Classify text as likely fake or real news using TF-IDF features and logistic reg
 ```bash
 pip install -r requirements.txt
 python src/train.py
+python src/predict.py --headline "Scientists discover water on Mars" --body "Researchers published new rover findings today."
 ```
 
-To score a custom article:
+## Outputs
 
-```bash
-python src/train.py --headline "Scientists discover water on Mars" --body "Researchers published new rover findings today."
-```
-
-The script saves the trained model pipeline to `artifacts/fake_news_model.joblib`.
-
+- `artifacts/fake_news_bundle.joblib`
+- `artifacts/fake_news_report.json`

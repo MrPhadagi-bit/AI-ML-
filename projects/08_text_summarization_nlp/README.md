@@ -13,6 +13,7 @@ Generate extractive summaries from long-form text using a lightweight frequency-
 ```bash
 pip install -r requirements.txt
 python src/summarize.py
+python src/summarize.py --evaluate
 ```
 
 To summarize your own text:
@@ -27,3 +28,6 @@ To summarize a different row from the sample dataset:
 python src/summarize.py --row-index 1
 ```
 
+## Outputs
+
+- `artifacts/summarization_evaluation.json` when `--evaluate` is used

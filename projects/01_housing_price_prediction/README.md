@@ -25,6 +25,7 @@ Predict housing prices from structured tabular features using a regression model
 ```bash
 pip install -r requirements.txt
 python src/train.py
+python src/predict.py --sample-index 0
 ```
 
 To use your own dataset:
@@ -45,7 +46,7 @@ Expected columns:
 - `longitude`
 - `median_house_value`
 
-## Output
+## Outputs
 
-The training script prints regression metrics and saves a trained pipeline to `artifacts/housing_model.joblib`.
-
+- `artifacts/housing_bundle.joblib`
+- `artifacts/training_metrics.json`

@@ -13,13 +13,10 @@ Classify movie reviews as positive or negative using a TF-IDF plus logistic regr
 ```bash
 pip install -r requirements.txt
 python src/train.py
+python src/predict.py --text "This movie was surprisingly good and well acted."
 ```
 
-To score your own review text:
+## Outputs
 
-```bash
-python src/train.py --text "This movie was surprisingly good and well acted."
-```
-
-The script saves the trained pipeline to `artifacts/sentiment_model.joblib`.
-
+- `artifacts/sentiment_bundle.joblib`
+- `artifacts/sentiment_report.json`

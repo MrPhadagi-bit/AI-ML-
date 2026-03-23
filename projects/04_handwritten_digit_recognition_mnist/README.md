@@ -1,25 +1,23 @@
 # Handwritten Digit Recognition with MNIST
 
-Recognize handwritten digits using a small convolutional neural network trained on MNIST.
+This project has been upgraded into a real handwritten-digit recognition workflow using a built-in digit dataset, a trainable classifier, and a separate prediction path for sample indices or image files.
 
 ## What is included
 
-- A TensorFlow training script for MNIST
-- Configurable epochs and optional dataset limit
-- Model saving to `artifacts/mnist_digit_classifier.keras`
+- A training script with model selection
+- A prediction script for exported digit images
+- A demo image exporter for quick manual tests
 
 ## Quick start
 
 ```bash
 pip install -r requirements.txt
-python src/train.py --epochs 3
+python src/train.py
+python src/export_demo_images.py
+python src/predict.py --image-path sample_data/demo_digits/3/digit_1.png
 ```
 
-For a quick smoke test:
+## Outputs
 
-```bash
-python src/train.py --epochs 1 --limit 10000
-```
-
-TensorFlow downloads MNIST automatically when you run the project for the first time.
-
+- `artifacts/digit_classifier.joblib`
+- `artifacts/digit_classifier_report.json`

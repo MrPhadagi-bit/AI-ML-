@@ -11,6 +11,12 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
+# Generated outputs
+artifacts/
+reports/
+projects/03_image_classification_cnn/sample_data/demo_images/
+projects/04_handwritten_digit_recognition_mnist/sample_data/demo_digits/
+
 # Data and model artifacts
 data/
 models/
@@ -27,3 +33,6 @@ models/
 Thumbs.db
 .vscode/
 .idea/
+
+# Test cache
+.pytest_cache/

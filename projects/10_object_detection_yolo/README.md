@@ -1,34 +1,19 @@
 # Object Detection with YOLO
 
-Run object detection on images or videos with the Ultralytics YOLO interface.
+This project has been upgraded into a runnable local object-detection workflow with demo-scene generation, bounding-box output, and saved JSON reports. It uses a lightweight connected-components detector so the project works on this machine now, and it can be extended to a YOLO backend later if you want.
 
 ## What is included
 
-- A starter detection script
-- Support for image, video, folder, or webcam sources
-- Output saving to `artifacts/predictions`
+- A demo scene generator
+- A detection script that writes annotated images and JSON detections
+- Batch processing for a single image or a folder of images
 
 ## Quick start
 
 ```bash
 pip install -r requirements.txt
-python src/detect.py --source path/to/image.jpg
+python src/generate_demo_data.py
+python src/detect.py
 ```
 
-To use a folder of images:
-
-```bash
-python src/detect.py --source sample_data
-```
-
-To use a webcam:
-
-```bash
-python src/detect.py --source 0
-```
-
-Notes:
-
-- The first run downloads the YOLO weights automatically.
-- Place any test images you want to keep in `sample_data/`.
-
+Outputs are written under `artifacts/predictions`.
