@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <rect width="900" height="420" fill="#f7fafc"/>
+  <text x="60" y="75" font-family="Arial" font-size="30" font-weight="700" fill="#111827">Image Classification Outcome</text>
+  <rect x="90" y="125" width="150" height="150" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+  <circle cx="165" cy="200" r="45" fill="#2563eb"/>
+  <path d="M260 200 H390" stroke="#374151" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="410" y="125" width="190" height="150" rx="8" fill="#ecfeff" stroke="#0891b2"/>
+  <text x="455" y="190" font-family="Arial" font-size="18" font-weight="700" fill="#155e75">Image Model</text>
+  <text x="455" y="222" font-family="Arial" font-size="15" fill="#0e7490">pixel features</text>
+  <path d="M620 200 H725" stroke="#374151" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="740" y="145" width="100" height="110" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="765" y="205" font-family="Arial" font-size="18" font-weight="700" fill="#1e3a8a">Circle</text>
+  <text x="90" y="340" font-family="Arial" font-size="16" fill="#374151">Final artifact: artifacts/shape_classifier.joblib</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#374151"/></marker></defs>
+</svg>

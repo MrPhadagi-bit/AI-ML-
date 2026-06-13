@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated outputs
+artifacts/
+reports/
+projects/03_image_classification_cnn/sample_data/demo_images/
+projects/04_handwritten_digit_recognition_mnist/sample_data/demo_digits/
+
+# Data and model artifacts
+data/
+models/
+*.h5
+*.keras
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.sav
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Test cache
+.pytest_cache/

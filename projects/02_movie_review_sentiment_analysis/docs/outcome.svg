@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <rect width="900" height="420" fill="#f8fafc"/>
+  <text x="60" y="75" font-family="Arial" font-size="30" font-weight="700" fill="#111827">Movie Review Sentiment Outcome</text>
+  <rect x="70" y="120" width="260" height="190" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+  <text x="95" y="165" font-family="Arial" font-size="17" font-weight="700" fill="#111827">Review Text</text>
+  <text x="95" y="205" font-family="Arial" font-size="15" fill="#374151">"Excellent acting and</text>
+  <text x="95" y="230" font-family="Arial" font-size="15" fill="#374151">a powerful ending."</text>
+  <path d="M345 215 H455" stroke="#374151" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="470" y="120" width="170" height="190" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+  <text x="505" y="185" font-family="Arial" font-size="18" font-weight="700" fill="#075985">TF-IDF</text>
+  <text x="495" y="220" font-family="Arial" font-size="15" fill="#0369a1">classifier</text>
+  <path d="M655 215 H730" stroke="#374151" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="745" y="150" width="100" height="130" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="770" y="205" font-family="Arial" font-size="18" font-weight="700" fill="#14532d">Positive</text>
+  <text x="85" y="360" font-family="Arial" font-size="16" fill="#374151">Final artifact: artifacts/sentiment_bundle.joblib</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#374151"/></marker></defs>
+</svg>

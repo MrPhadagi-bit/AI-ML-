@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <rect width="900" height="420" fill="#f7fafc"/>
+  <text x="60" y="75" font-family="Arial" font-size="30" font-weight="700" fill="#111827">Stock Price Forecasting Outcome</text>
+  <rect x="80" y="120" width="760" height="220" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+  <polyline points="120,285 190,250 260,265 330,215 400,230 470,185 540,195 610,160" fill="none" stroke="#2563eb" stroke-width="5"/>
+  <polyline points="610,160 680,145 750,128 810,118" fill="none" stroke="#16a34a" stroke-width="5" stroke-dasharray="10 8"/>
+  <line x1="610" y1="110" x2="610" y2="305" stroke="#64748b" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="470" y="322" font-family="Arial" font-size="15" fill="#2563eb">history</text>
+  <text x="695" y="322" font-family="Arial" font-size="15" fill="#16a34a">forecast</text>
+  <text x="95" y="365" font-family="Arial" font-size="16" fill="#374151">Final artifact: artifacts/next_5_day_forecast.csv</text>
+</svg>
